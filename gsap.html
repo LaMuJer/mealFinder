@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP GreenSock</title>
+    <style>
+        body {
+            background-color: #000;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .demo {
+            padding: 10px;
+            border: 1px solid #fff;
+            margin-top: 100px;
+            display: flex;
+           align-items: center;
+        }
+        .logo {
+            width: 120px;
+        }
+        .girl {
+            width: 100px;
+            height: 100px;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        .circle1 {
+            background-color: royalblue;
+            filter: drop-shadow(0 0 10px royalblue);
+        }
+        .circle2 {
+            background-color: rgb(65, 225, 65);
+            filter: drop-shadow(0 0 10px rgb(65, 225, 65));
+        }
+        .circle3 {
+            background-color: rgb(225, 196, 65);
+            filter: drop-shadow(0 0 10px rgb(225, 196, 65));
+        }
+        .circle4 {
+            background-color: rgb(220, 65, 225);
+            filter: drop-shadow(0 0 10px rgb(220, 65, 225));
+        }
+        .circle5 {
+            background-color: rgb(65, 220, 225);
+            filter: drop-shadow(0 0 10px rgb(65, 220, 225));
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="demo">
+        <img src="./img/meal.svg" alt="Meal Logo" class="logo">
+
+        <img src="./img/Anime-Girl-Illustration.svg" alt="Anime Girl" class="girl">
+
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+    </div>
+
+    <div class="btns">
+        <button class="play">play</button>
+        <button class="pause">pause</button>
+        <button class="seek">seek</button>
+        <button class="progress">progress</button>
+        <button class="reverse">reverse</button>
+        <button class="timeScale4">timeScale4</button>
+        <button class="timeScale2">timeScale2</button>
+    </div>
+    
+    
+       
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+        // Animate logo
+        // gsap.to(".logo",{duration: 2, x: 300, backgroundColor: "#023047", borderRadius: "20%", border: "5px solid white", ease: "elastic"});
+
+       // Animate multiple (logo and girl)
+       gsap.set(".logo, .girl",{transformOrigin: "50%,50%"});// set multiple selectors
+       gsap.to(".logo, .girl",{duration: 20, rotation: 360})
+
+       // variable 
+       let myObj = {rotation: 0};
+       gsap.to(myObj , {duration: 10, rotation: 360, onStart: function() {
+           console.log(myObj.rotation);
+       }});
+
+       // Additional Methods
+       gsap.from(".logo",{duration: 1.5, opacity: 0, scale: 0.3, ease: "back"});
+
+    //    gsap.from(".circle", {duration: 1, opacity: 0, y:() => Math.random() * 400 - 200, stagger: 0.25})// produce random y values
+
+       let tween = gsap.from(".circle", {duration: 5, opacity: 0, y: "random(-200, 200)", stagger: 0.25, force3D: true,})// produce random y values as upper code
+    
+       
+       document.querySelector(".play").onclick = () => tween.play();
+       document.querySelector(".pause").onclick = () => tween.pause();
+       document.querySelector(".seek").onclick = () => {tween.seek(2); sequenceUpdateDragger(); };
+       document.querySelector(".progress").onclick = () => {tween.progress(0.2); sequenceUpdateDragger(); };
+       document.querySelector(".reverse").onclick = () => tween.reverse();
+       document.querySelector(".timeScale4").onclick = () => tween.timeScale(4);
+       document.querySelector(".timeScale2").onclick = () => tween.timeScale(0.2);
+
+    </script>
+</body>
+</html>

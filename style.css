@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    scroll-behavior: smooth;
+} 
+:root {
+    --green: #003049;
+    --peach: #ee786e;
+    --sand: #fceeb5;
+    --primary-color : #ffd60a;
+    --secondary-color : #003566;
+    --animation-delay3 : 3s;
+    --animation-delay1 : 1s;
+    --animation-duration3 : 3s;
+    --animation-duration2 : 2s;
+
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.main-section {
+    position: relative;
+}
+.nav-bar-section {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+.navLi li {
+    padding: 5px;
+    margin: 0 5px 0 5px;
+}
+.img-heading-section {
+    margin: 0;
+    padding: 0;
+}
+.bg-photo {
+    width: 100%;
+    height: 80vh;
+}
+.bgImg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tomato {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    display: grid;
+    place-items: center;
+}
+.tomato img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(10px 10px 3 #000);
+}
+.svg-photo {
+    background-color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 60px;
+    left: 150px;
+    z-index: 0;
+}
+.blogSvg {
+    width: 100%;
+    height: 100%;
+    animation-delay: var(--animation-delay1);
+    animation-duration: var(--animation-duration3);
+}
+
+.heading {
+    position: absolute;
+    color: var(--primary-color);
+    /* color: #fff; */
+    bottom: 100px;
+    left: 20px;
+    
+}
+.heading h4,p {
+    font-size: 16px;
+}
+.heading h1 span,h2 span {
+    color: #fff;
+}
+.heading h2 {
+    animation-delay: var(--animation-delay1);
+}
+.heading p {
+    line-height: 19px;
+}
+.heading button {
+    animation-delay: var(--animation-delay3);
+    /* animation-duration: var(--animation-duration2); */
+}
+
+
+.sign-up {
+    color: #fff;
+    /* padding: 5px; */
+    /* background: -webkit-gradient(to right,var(--green) 0%,var(--sand) 50%,var(--peach) 100%); */
+    background: linear-gradient(to right,var(--green) 0%,var(--sand) 50%,var(--peach) 100%);
+    background-size: 500%;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+button:hover {
+    color: #fff;
+     animation-name: gradient;
+     animation-duration: 1s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    /* background-color: #ffffff;   */
+    height: 50px;
+    padding: 10px 0px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+.words {
+    overflow: hidden;
+}
+.words span {
+    font-size: 30px;
+    display: block;
+    padding-left: 10px;
+    height: 100%;
+    animation: rotate 6s infinite;
+    color: #f94144;
+}
+.heroLink {
+    transition: 0.5s;
+}
+.heroLink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd60a;
+
+    filter:brightness(150%) ;
+    transform: translateX(-10px);
+}
+@keyframes line {
+    0% {
+        transform: translateZ(10px) ;
+    }
+}
+@keyframes rotate {
+    10%{
+        transform: translateY(-110%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-210%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-310%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-410%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+@keyframes gradient {
+    0% {
+       background-position: 0% 50% 
+    }
+    
+  100%{
+      background-position: 100%
+  }
+     
+}
+
+/* hero section ends  */
+
+/* service section starts */
+.service {
+   background-color: #1c1e27;
+   border-top: 1px solid rgba(0, 0, 0, 0.4);
+   color: #fff;
+   padding: 100px;
+}
+.serviceSubDiv {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 10px 15px 10px 3px rgb(0 0 0 / 10%);
+    padding: 10px ;
+    color: #fff;
+    margin: 30px 15px 0 15px;
+    cursor: pointer;
+}
+.serviceSubDiv img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+.wave {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: -630px;
+    left: 0;
+}
+.serviceSubDiv:hover {
+    filter: drop-shadow(0 0 30px #000);
+    filter: saturate(200%);
+    color: #ffd60a;
+    text-shadow: 2px 3px #000;
+}
+.serviceSubDiv:hover .serAni1 {
+    transition: 0.8s;
+    transform:  translateY(-10px) rotate(360deg);
+}
+.serviceSubDiv:hover .serAni2 {
+    transition: 0.2s;
+    transform: translateY(-10px);
+}
+.serviceSubDiv:hover .serAni3 {
+    animation: swing 2s infinite;
+    transition: 0.2s;
+}
+@keyframes swing {
+    20%{
+        transform: translateY(-1px) rotate(-30deg);
+    }   
+    60%{
+        transform: translateY(-1px) rotate(30deg);
+    }
+}
+.serviceSubDiv:hover .serAni4 {
+    animation: bigSmall 2s infinite;
+    transition: 0.2s;
+}
+@keyframes bigSmall {
+    20%{
+        transform: scale(0.7);
+    }   
+    60%{
+        transform: scale(1.5);
+    }
+}
+.serviceSubDiv:hover .serAni5 {
+    animation: swing 0.9s infinite;
+    transition: 1s;
+    background-image: url("./img/cafe.svg");
+    
+}
+
+/* Service section ends */
+
+/* Special Dishes section starts */
+
+.specialDish {
+    
+    padding: 200px 0 180px 0;
+    background-color: #adb5bd;
+}
+.specialheading {
+    text-align: center;
+}
+.specialDishSubDiv-container {
+    margin: 20px 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specialDishSubDiv {
+    border: 1px solid #ffffff11;
+    padding: 10px 0px;
+    border-radius: 20px;
+    transition: 0.9s;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.specialDishSubDiv:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px #00000034;
+    transform: translateZ(30px) ;
+    filter: brightness(110%);
+}
+.specialDishSubDiv img {
+    
+}
+.offer {
+    color: #fff;
+    background-color: #ffd60a;
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+}
+.card-text i {
+    font-size: 12px;
+   color: #ffd60a;
+}
+.card-body p:nth-child(1) {
+    margin-left: 10px;
+}
+.card-body p:nth-child(2) {
+    margin-right: 10px;
+}
+.wave svg {
+    position: absolute;
+    bottom:  -600px;
+}
+/* Special Dishes section ends */
+
+/* Meet Our Chefs starts */
+.meetChefCon {
+    padding: 50px;
+    background-color: #1c1e27;
+    color: #fff;
+}
+.subChef {
+    height: 500px;
+    margin: 0 20px;
+}
+.chefBg {
+    position: relative;
+    transition: 0.5s;
+}
+.chefBg:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px #ffd60a);
+    transform: translateY(-10px);
+}
+.chefBg svg:nth-child(2) path{
+    width: 200px;
+    height: 200px;
+    fill: rgba(255, 255, 255, 0.5);
+    filter: blur(3px);
+}
+.chefBg svg:nth-child(2) {
+    position: absolute;
+    /* z-index: -1; */
+    top: 50px;
+}
+.chefBg svg:nth-child(1) path{
+    width: 300px;
+    height: 300px;
+}
+.chefBg svg:nth-child(1) {
+    position: relative;
+    fill: rgba(255, 255, 255, 0.3);
+    filter: blur(150%);
+    filter: drop-shadow(0 0 5px #fff);
+    top: 30px;
+    /* background-color: #ffd60a; */
+}
+.chefBg img {
+    width: 200px;
+    height: 300px;
+    z-index: 1;
+}
+.contactIcon {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.contactIcon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+/* Meet Our Chefs ends */
+
+/* Contact Section starts */
+.contact {
+    padding: 0 10px 50px 10px;
+    background-color: #adb5bd;
+    color: #000;
+    bottom: 40px;
+}
+.contactLogo {
+    background: rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    padding: 10px 0;
+    border-radius: 20px;
+    filter: brightness(110%);
+}
+.contactWave{
+    background-color: #adb5bd;
+}  
+.lastContactIcon i:hover {
+    transform: translateY(-10px) scale(1.1);
+    background-color: #ffd60a;
+}  
+.contact a {
+    text-decoration: none;
+    color: #000;
+    margin : 5px 0px;
+    padding: 5px;
+    transition:1s;
+
+}
+.contact a:hover {
+    transform: scale(1.1);
+    color: #000;
+    background-color: #ffd60a;
+    border-radius: 5px;
+}
+.contact p {
+    text-shadow: 1px 1px  #ffffff22;
+}
+/* Contact Section ends */
+
+/* Footer section */
+.footer {
+    background-color: #1c1e27;
+    color: #fff;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffd60a;
+}
+.footer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3px #fe7f2d);
+}
+
+/* displayMeal css */
+.more {
+    cursor: pointer;
+    transition: 1s;
+}
+.more:hover{
+    color: #ffd60a  ;
+}
+.all-container {
+    background-color: #1c1e27;
+    padding: 150px 10px 50px 10px;
+}
+.displayItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.displayItemsSub {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.displayItemsSub img{
+    width: 100%;
+    height: 100%;
+}
+.meal-info {
+    opacity: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.displayItemsSub:hover {
+    transform: scale(0.9);
+}
+.displayItemsSub:hover .meal-info {
+    opacity: 1;
+}
+.popularItems form input{
+    border-radius: 10px 0 0 10px;
+}
+.searchBtn {
+    padding: 10px;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+}
+.searchBtn:hover {
+    color:#000; 
+}

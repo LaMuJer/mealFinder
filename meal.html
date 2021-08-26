@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder 🍔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row col-12 nav-bar-section">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand d-flex align-items-center" href="#" >
+                      <img src="./img/logo.svg" alt="logo.svg" class="logo">
+                    <h1 class="letter" style="font-family: 'Dancing Script', cursive; color: #90be6d; font-size: 30px; ">Paradize</h1></a> 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse navLi" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#service">Services</a>
+                      </li>               
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#dishes">Dishes</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#team">Team</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#contact">Contact</a>
+                      </li> 
+                    </ul>
+                    <form class="d-flex">                   
+                      <button class="btn sign-up" type="submit">Sign up</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="row col-12 m-0">
+            <div class="all-container d-flex justify-content-around">
+                <div class="displayItems col-9" id="displayItems">
+                    <!-- display meal divs with js -->
+                </div>
+                <div class="popularItems col-2 text-center" id="popularItems">
+                    <div class="input-group flex-nowrap d-flex">
+                        <form action=""  class="d-flex" id="submit">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping" id="search" required> 
+                        
+                            <button type="submit" class="searchBtn"  ><i class="fas fa-search"></i></button>
+                        </form>
+                        
+                        
+                    </div>
+                    
+                    
+                    <!-- popular meals with js -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./jquery.lettering.js"></script>
+    <script src="./additional.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

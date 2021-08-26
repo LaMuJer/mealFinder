@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder 🍔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-section" id="home">
+        
+        <div class="row col-12 nav-bar-section">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand d-flex align-items-center" href="#" >
+                      <img src="./img/logo.svg" alt="logo.svg" class="logo">
+                    <h1 class="letter" style="font-family: 'Dancing Script', cursive; color: #90be6d; font-size: 30px; ">Paradize</h1></a> 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse navLi" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#service">Services</a>
+                      </li>               
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#dishes">Dishes</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#team">Team</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link heroLink" href="#contact">Contact</a>
+                      </li> 
+                    </ul>
+                    <form class="d-flex">                   
+                      <button class="btn sign-up" type="submit">Sign up</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        
+            <div class="bg-photo">
+                <img src="./img/chickenBg.jpg" alt="sushibg.jpg" class="bgImg">
+                <div class="tomato">
+                  <img src="./img/tomato.svg" alt="animal.svg" class="">
+                </div>
+            </div>
+            
+            <div class="row col-12 ">
+                <div class="col-5 heading">
+                    <h4 class="text-muted letter">Welcome to our Restaurant</h4>
+                    <h1 class="display-4 animate__animated animate__fadeInLeft mb-0"> Who Love to Eat ?  </h1> 
+                    <div class="wrapper">
+                      <h1 class="display-6" style="color: #90be6d; font-family: 'Dancing Script', cursive;">Paradize is </h1>
+                    <div class="words">
+                      <span>Fantastic</span>
+                      <span>Easy</span>
+                      <span>Awesome</span>
+                      <span>Fast</span>
+                      <span>Delicious</span>
+                      <span>Mind Blowing</span>
+                    </div>
+                    </div>
+                    
+                    
+                    <button class="btn btn-light mt-3 animate__animated animate__heartBeat">
+                    <span class="particletext ">Learn More</span></button>
+                </div>
+              </div>
+        
+    </div>
+
+    <div class="service container-fluid" id="service">
+      <div class="row col-12 d-flex justify-content-center align-items-center">
+        <h3 style="text-align: center;">Our Awesome Services</h3>
+        <div class="col-2 d-flex justify-content-center align-items-center flex-column serviceSubDiv " id="meal" onclick="location.href='meal.html'; showMeal();">
+            <img src="./img/meal.svg" alt="meal.svg" class="serAni1">
+            <p class=" mb-0">Best Dishes</p>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center flex-column serviceSubDiv " id="chicken">
+          <img src="./img/burger.svg" alt="burger.svg" class="serAni2">
+          <p class=" mb-0">Chicken</p>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center flex-column serviceSubDiv " id="pizza">
+          <img src="./img/pizza.svg" alt="pizza.svg" class="serAni3">
+          <p class=" mb-0">Pizza</p>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center flex-column serviceSubDiv " id="fish" >
+          <img src="./img/fish.svg" alt="fish.svg" class="serAni4">
+          <a href="#" id="fishLink " class="text-decoration-none text-white">Fish Dish</a>
+        </div>
+        <div class="col-2 d-flex justify-content-center align-items-center flex-column serviceSubDiv " id="drink">
+          <img src="./img/drink.svg" alt="drink.svg" class="serAni5">
+          <p class=" mb-0">Dessert</p>
+        </div>
+        
+      </div>
+
+      <div class=" container-fluid "><img src="./img/wave.svg" alt="" class="wave"></div>
+    </div>
+
+    <div class="specialDish container-fluid" id="dishes">
+        <div class="row col-12">
+          <div class="specialheading">
+            <h1>Our Special Dishes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias <br> consectetur necessitatibus incidunt?</p>
+          </div>
+          <div class="specialDishSubDiv-container">
+          
+              <div class="card specialDishSubDiv col-2 d-flex justify-content-between py-0" >
+                <img src="https://www.themealdb.com/images/ingredients/fish.png" class="card-img-top" alt="...">
+                <div class="card-body px-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p>Chicken Burger</p>
+                      <p>$30</p>
+                    </div>
+                    <div class="card-text d-flex justify-content-between align-items-center">
+                      <p class="mb-0 ms-0 offer">25% Offer</p>
+                      <div class="">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card specialDishSubDiv col-2 d-flex justify-content-between py-0" >
+                <img src="https://www.themealdb.com/images/ingredients/fish.png" class="card-img-top" alt="...">
+                <div class="card-body px-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p>Chicken Burger</p>
+                      <p>$30</p>
+                    </div>
+                    <div class="card-text d-flex justify-content-between align-items-center">
+                      <p class="mb-0 ms-0 offer">25% Offer</p>
+                      <div class="">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card specialDishSubDiv col-2 d-flex justify-content-between py-0" >
+                <img src="https://www.themealdb.com/images/ingredients/fish.png" class="card-img-top" alt="...">
+                <div class="card-body px-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p>Chicken Burger</p>
+                      <p>$30</p>
+                    </div>
+                    <div class="card-text d-flex justify-content-between align-items-center">
+                      <p class="mb-0 ms-0 offer">25% Offer</p>
+                      <div class="">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card specialDishSubDiv col-2 d-flex justify-content-between py-0" >
+                <img src="https://www.themealdb.com/images/ingredients/fish.png" class="card-img-top" alt="...">
+                <div class="card-body px-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p>Chicken Burger</p>
+                      <p>$30</p>
+                    </div>
+                    <div class="card-text d-flex justify-content-between align-items-center">
+                      <p class="mb-0 ms-0 offer">25% Offer</p>
+                      <div class="">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="more" id="more">
+                  <h6 onclick='location.href = "displayMeal.html" '>More Special Dishes <i class="fas fa-arrow-right"></i></h6>
+              </div>
+          </div>
+          
+        </div>
+        <div class="wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1e27" fill-opacity="1" d="M0,96L34.3,128C68.6,160,137,224,206,256C274.3,288,343,288,411,250.7C480,213,549,139,617,117.3C685.7,96,754,128,823,165.3C891.4,203,960,245,1029,240C1097.1,235,1166,181,1234,144C1302.9,107,1371,85,1406,74.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </div>
+    </div>
+
+    <div class="meetChefCon container-fluid" id="team">
+      <div class="row col-12 d-flex justify-content-center meetChef">
+
+        <div class="row col-12 text-center mb-5">
+          <h1>Meet Our Chefs</h1>
+          <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias magni possimus quidem repellat<br>  a officiis nihil non. Porro, tempore asperiores.</p>
+        </div>
+
+        <div class="row col-12 d-flex justify-content-center align-items-center mt-3">
+
+          <div class="col-3 subChef">
+            <div class="chefBg d-flex justify-content-center">
+              <svg viewBox="0 0 200 200" width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <img src="./img/chef1.png" alt="">
+            </div>
+            
+            <h4 class="text-center mb-0">William Sons</h4>
+            <p class="text-center  my-1">Cooker</p>
+            <div class="text-center ">
+              <i class="fab fa-facebook-f contactIcon"></i>
+              <i class="fab fa-twitter contactIcon"></i>
+              <i class="fab fa-instagram contactIcon"></i>
+            </div>
+          </div>
+
+          <div class="col-3 subChef">
+            <div class="chefBg d-flex justify-content-center">
+              <svg viewBox="0 0 200 200" width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FF0066" d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <img src="./img/chef2.png" alt="" class="">
+            </div>
+            
+            <h4 class="text-center mb-0">David Roberto</h4>
+            <p class="text-center  my-1">Cooker</p>
+            <div class="text-center ">
+              <i class="fab fa-facebook-f contactIcon"></i>
+              <i class="fab fa-twitter contactIcon"></i>
+              <i class="fab fa-instagram contactIcon"></i>
+            </div>
+          </div>
+
+          <div class="col-3 subChef">
+            <div class="chefBg d-flex justify-content-center">
+              <svg viewBox="0 0 200 200" width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FF0066" d="M65.4,-22C73.9,4.7,62.3,37.2,39.3,53.9C16.3,70.6,-18.1,71.4,-40.3,55.3C-62.5,39.2,-72.5,6.2,-63.8,-20.9C-55,-48.1,-27.5,-69.3,0.5,-69.5C28.5,-69.6,57,-48.7,65.4,-22Z" transform="translate(100 100) scale(1.3)" />
+              </svg>
+              <img src="./img/chef3.png" alt="">
+            </div>
+            
+            <h4 class="text-center mb-0">Geroge Mathew</h4>
+            <p class="text-center  my-1">Cooker</p>
+            <div class="text-center ">
+              <i class="fab fa-facebook-f contactIcon"></i>
+              <i class="fab fa-twitter contactIcon"></i>
+              <i class="fab fa-instagram contactIcon"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contactWave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1e27" fill-opacity="1" d="M0,192L24,186.7C48,181,96,171,144,154.7C192,139,240,117,288,101.3C336,85,384,75,432,74.7C480,75,528,85,576,112C624,139,672,181,720,186.7C768,192,816,160,864,138.7C912,117,960,107,1008,106.7C1056,107,1104,117,1152,112C1200,107,1248,85,1296,85.3C1344,85,1392,107,1416,117.3L1440,128L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+    </div>
+
+    <div class="contact container-fluid" id="contact">
+      <div class="row col-12 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center justify-content-center m-0">
+            <div class="col-3 text-start">
+              <div class="d-flex align-items-center justify-content-center contactLogo">
+                <img src="./img/logo.svg" alt="" class="logo" >
+                <h4 class="" style="font-family: 'Dancing Script', cursive; color: #90be6d; font-size: 30px; ">Paradize</h4>
+              </div>
+              <p class="my-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente perspiciatis assumenda!</p>
+              <div class="mt-2 d-flex align-items-center justify-content-center lastContactIcon">
+                <i class="contactIcon mx-2 fab fa-facebook-f" style="color: #000; background-color: #fff;"></i>
+                <i class="contactIcon mx-2 fab fa-instagram" style="color: #000; background-color: #fff;"></i>
+                <i class="contactIcon mx-2 fab fa-twitter" style="color: #000; background-color: #fff;"></i>
+              </div>
+            </div>
+            <div class="col-3 text-start">
+              
+                <div class="d-flex flex-column align-items-center justify-content-center ">
+                  <p class="fw-bold fs-4 ">Services</p>
+                  <a href="#">Delivery</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Fast Food</a>
+                  <a href="#">Reserve</a>
+                </div>
+
+            </div>
+            <div class="col-3 text-start">
+              
+              <div class="d-flex flex-column align-items-center justify-content-center ">
+                <p class="fw-bold fs-4 ">Links</p>
+                <a href="#">Help Us</a>
+                <a href="#">Support</a>
+                <a href="#">API</a>
+                <a href="#">Random</a>
+              </div>
+
+          </div>
+          <div class="col-3 text-start">
+              
+            <div class="d-flex flex-column align-items-center justify-content-center ">
+              <p class="fw-bold fs-4 ">Contact Us</p>
+              <a href="tel:+959 978 341 501"><i class="fas fa-phone"></i> : +959 978 341 501</a>
+              <a href="mailto:hsuwinlat2002@gmail.com"><i class="fas fa-mail-bulk"></i> : hsuwinlat2002@gmail.com</a>
+              <a href="#"><i class="fas fa-location-arrow"></i> No(123) Main street , Yangon</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="https://www.facebook.com/staphy.staphy.9/" class="mx-2" ><i class="fab fa-facebook  lastContactIcon"></i></a>
+                <a href="https://www.facebook.com/staphy.staphy.9/" class="mx-2"><i class="fab fa-facebook-messenger   lastContactIcon"></i></a>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    
+    <div class="footer container-fluid d-flex justify-content-between align-items-center">
+        <a href="mailto:hsuwinlat2002@gmail.com">hsuwinlat2002@gmail.com</a>
+        <p class="mb-0">Project by <span class="fw-bolder text-warning"> HsuWinLat </span>  </p>
+        <img src="./img/hinata.png" alt="">
+        <a href="tel:+959978341501">+959 978 341 501</a>
+    </div>
+
+    
+
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./jquery.lettering.js"></script>
+    <script src="./additional.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
